@@ -26,7 +26,7 @@ class ConexionBD:
             )
         """)
         self.cursor.execute("""
-            CREATE TABLE IF NOT EXISTS pagos (
+            CREATE TABLE IF NOT EXISTS pagos(
                 id INT AUTO_INCREMENT PRIMARY KEY,
                 ci VARCHAR(20),
                 monto FLOAT,
