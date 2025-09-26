@@ -16,7 +16,7 @@ class ConexionBD:
 
     def crear_tablas(self):
         self.cursor.execute("""
-            CREATE TABLE IF NOT EXISTS postulantes (
+            CREATE TABLE IF NOT EXISTS postulantes(
                 ci VARCHAR(20) PRIMARY KEY,
                 nombre VARCHAR(100),
                 carrera VARCHAR(100),
