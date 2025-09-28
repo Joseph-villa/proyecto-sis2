@@ -15,7 +15,11 @@ class Pago:
         )
 
     def resumen(self):
-        return f"{self.tipo} - Bs {self.monto} - {self.fecha}"
+        if(self.monto < 0)
+            return "Monto negativo"
+        else
+            return f"{self.tipo} - Bs {self.monto} - {self.fecha}"
+
 
 
 
