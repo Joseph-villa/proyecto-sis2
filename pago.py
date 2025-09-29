@@ -14,4 +14,5 @@ class Pago:
             re.match(r"^\d{2}/\d{2}/\d{4}$", self.fecha)
         )
 
-
+    def resumen(self):
+        return f"{self.tipo} - Bs {self.monto} - {self.fecha}"
