@@ -11,17 +11,8 @@ class Pago:
         return (
             isinstance(self.monto, (int, float)) and self.monto > 0 and
             self.tipo and
-            re.match(r"\d{2}/\d{2}/\d{4}", self.fecha)
+            re.match(r"^\d{2}/\d{2}/\d{4}$", self.fecha)
         )
 
     def resumen(self):
-        if(self.monto < 0)
-            return "Monto negativo"
-        else
-            return f"{self.tipo} - Bs {self.monto} - {self.fecha}"
-
-
-
-
-
-
+        return f"{self.tipo} - Bs {self.monto} - {self.fecha}"
