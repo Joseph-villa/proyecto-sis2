@@ -102,3 +102,4 @@ def lanzar_postulante():
 
     app.mainloop()
 
+
